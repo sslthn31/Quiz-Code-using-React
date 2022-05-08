@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.routes {
+  background-color: #bfc4bb;
+  margin: 0 20rem;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.navbar {
+  padding: 1.5rem 1rem;
+  background-color: yellowgreen;
+}
+
+.navbar .title {
+  text-decoration: none;
+  color: rgb(37, 34, 34);
+  transition: all 0.1s ease-in;
+}
+.navbar .title:hover {
+  color: rgb(219, 179, 179);
+}
+.home {
+  padding: 5rem 1rem;
+}
+
+.home-title {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin-bottom: 12rem;
+}
+.home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-content button {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background-color: #3c522a;
+  transition: all 0.3s ease-in;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.home-content button:hover {
+  transform: scale(1.1);
+  background-color: #385322;
+  color: #fff;
+}
+.quiz {
+  padding: 2.5rem 1rem;
+}
+.quiz h3 {
+  text-align: center;
+}
+
+.quiz-card {
+  padding: 3.5rem 0;
+}
+.card-body {
+  padding: 2rem 0;
+}
+.card-body .option-icon {
+  margin: 5px 5px 0 0;
+}
+.card-body .value {
+  display: flex;
+  align-items: center;
+}
+.btn-action {
+  padding: 100px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn-action button {
+  display: flex;
+  padding: 0 5px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-action .prev-btn {
+  background-color: #d40e0e;
+}
+.btn-action .nxt-btn {
+  background-color: #1d33af;
+}
+.summary-win {
+  padding: 160px 0;
+}
+.summary-win .text-win {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-win h2 {
+  font-size: 45px;
+}
+.text-win h3 {
+  font-size: 35px;
+}
+.summary-lose {
+  padding: 175px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.summary-lose h2 {
+  font-size: 45px;
+  margin-bottom: 2rem;
+}
+.summary-lose button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #548811;
+}
+.summary-lose button .tombol-balik {
+  text-decoration: none;
+  color: #2f303a;
+  font-weight: bold;
+  transition: 0.3s all ease-out;
+}
+.summary-lose button .tombol-balik:hover {
+  color: #e8eee3;
+}
+.footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: #2f303a;
+}
+@media screen and (max-width: 600px) {
+  .routes {
+    margin: 0;
+  }
+
+  .navbar .title {
+    font-size: 14px;
+  }
+
+  .home-content button {
+    width: 125px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .btn-action button {
+    width: 70px;
+    height: 35px;
+    font-size: 12px;
+  }
+}
